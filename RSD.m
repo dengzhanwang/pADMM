@@ -21,8 +21,7 @@ function [xopt, info] = RSD(fns, params)
 % xopt : the last iterate
 % info : informtion generated during the algorithms
 %      
-%
-% By Wen Huang
+
 
     fprintf('RSD\n');
     % set default parameters and check the legal range of parameters

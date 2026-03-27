@@ -8,8 +8,7 @@ function params = set_default_para(params, name, default_value, type, a, b)
 % dafault_value : the default value of the field
 % type : it is either "float" or "int". It is to indicate the type of the field
 % [a, b] : indicate the required range of the given value.
-%
-% By Wen Huang
+
     if(~isfield(params, name))
         params = setfield(params, name, default_value);
         return;

@@ -16,8 +16,7 @@ function stop = IsStopped(iter, Xs, fvs, ngfs, ngf0, times, fns, params)
 % stop : stop the algorithm or not
 %     0 : not stop
 %     1 : stop
-% 
-% By Wen Huang
+
 
     params = SetDefaultParams(params, 'Tolerance', 1e-6, 'float', eps, inf);
     params = SetDefaultParams(params, 'Max_Iteration', 500, 'float', 0, inf);

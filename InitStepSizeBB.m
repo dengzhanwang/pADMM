@@ -15,8 +15,6 @@ function [initstepsize, info] = InitStepSizeBB(iter, initslope, fvs, Xs, GFs, Et
 % OUTPUT:
 % initstepsize : initial step size
 % info: a struct that contains debug information
-% 
-% By Wen Huang
 
     params = SetDefaultParams(params, 'FirstIterInitStepSize', 1, 'float', 0.1, inf);
     params = SetDefaultParams(params, 'omega1', 1e-2, 'float', 0, 1);

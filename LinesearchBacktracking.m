@@ -31,7 +31,6 @@ function [eta2, stepsize, x2, f2, gradf2, slopex2, LSinfo, status] = linesearch(
 %          1 means line search fails with inner iterations reaches its max number of iterations
 %          2 means the numerical errors dominates the computation
 % 
-% By Wen Huang
     params = SetDefaultParams(params, 'alpha', 1e-4, 'float', 0, 0.5);
     params = SetDefaultParams(params, 'ratio1', 0.01, 'float', 0, 1);
     params = SetDefaultParams(params, 'ratio2', 0.99, 'float', 0, 1);
